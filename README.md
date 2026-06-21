@@ -6,6 +6,32 @@ A Python desktop app that uses **MediaPipe Hands** to track your hand skeleton i
 
 ---
 
+## ⚡ Run Instantly (3 commands)
+
+> **Requirements:** Python 3.9 – 3.12 · a working webcam
+
+```bash
+# 1. Clone and enter the project
+git clone https://github.com/WATERFBG/Air-Guitar-Drums.git
+cd Air-Guitar-Drums
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Generate placeholder sounds + launch
+python generate_sounds.py && python main.py
+```
+
+That's it. A window opens showing your webcam feed with coloured zone overlays and your hand skeleton drawn live.
+
+- **Strike a zone with a fast downward motion** → drum sound plays
+- Press **M** to switch to Guitar mode, then **swipe horizontally** through a string band
+- Press **Q** or **ESC** to quit
+
+> **No real sound samples needed** — `generate_sounds.py` creates 12 synthetic WAV tones so the app is fully playable out of the box. Swap any file in `sounds/` with a real `.wav` sample whenever you like.
+
+---
+
 ## Demo
 
 | Drum Kit Mode | Guitar Mode |
